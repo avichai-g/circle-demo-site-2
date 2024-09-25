@@ -1,0 +1,10 @@
+/* src/components/Banner.module.css */
+.bannerContainer {
+  margin-bottom: 20px;
+}
+
+.bannerImage {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}

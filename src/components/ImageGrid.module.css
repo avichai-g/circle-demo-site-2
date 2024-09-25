@@ -1,0 +1,21 @@
+/* src/components/ImageGrid.module.css */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.imageLink {
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.imageLink:hover {
+  transform: scale(1.05);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
