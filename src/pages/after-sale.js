@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import styles from "../styles/AfterSale.module.css";
 import Layout from "../components/Layout";
+import { injectPixel } from "../utils/pixelLoader";
 
 const CheckCircleIcon = () => (
   <svg
@@ -22,6 +23,10 @@ const CheckCircleIcon = () => (
 );
 
 export default function SuccessfulPayment() {
+  useEffect(() => {
+    injectPixel();
+  }, []);
+
   return (
     <Layout>
       <div className={styles.container}>
@@ -77,7 +82,7 @@ export default function SuccessfulPayment() {
                 </p>
                 <p className={styles.total}>
                   <span>Total paid</span>
-                  <span>$150.38</span>``
+                  <span>$150.38</span>
                 </p>
               </div>
               <p className={styles.orderNumber}>Order #: 1234567890</p>

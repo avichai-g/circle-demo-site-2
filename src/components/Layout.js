@@ -12,13 +12,9 @@ export default function Layout({ children }) {
           <span className={styles.icon}>🛠️</span>
           <span>After Sale</span>
         </Link>
-        <Link href="/gallery" className={styles.navLink}>
-          <span className={styles.icon}>🖼️</span>
-          <span>Gallery</span>
-        </Link>
-        <Link href="/abondend" className={styles.navLink}>
-          <span className={styles.icon}>🖼️</span>
-          <span>Abondend</span>
+        <Link href="/women-shoes" className={styles.navLink}>
+          <span className={styles.icon}></span>
+          <span>Women shoes</span>
         </Link>
       </nav>
       <main className={styles.main}>{children}</main>
